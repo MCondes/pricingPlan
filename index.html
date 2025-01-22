@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Jersey+25&family=Sono:wght@200..800&display=swap" rel="stylesheet">
+    
+    <style>
+      body {
+        font-family: "Sono", sans-serif;
+        
+      }
+      .pricing-container {
+        display:flex;
+        justify-content: center;
+        gap:2rem;
+        
+        font-family: "DM Serif Text", serif;
+        font-weight: 400;
+        font-style: normal;
+        
+        
+
+}
+      
+      .pricing-plan{
+        flex:1;
+        background-color: rgb(165, 162, 162);
+        text-align: center;
+        min-width:300px;
+        border-radius: 5px;;
+       
+        
+      }
+      .plan-button {
+       border-radius: 25%;
+        background-color: rgb(244, 151, 11);
+        border-color:rgb(244, 151, 11);
+        color: white;
+      }
+      .plan-title{
+        font-size: 20px;
+      }
+      .plan-price{
+        font-size: 25px;
+      }
+      ul > * {
+        list-style-type: none;
+      }
+     
+     
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 1250px) {
+        .pricing-container{flex-direction:column;}
+        .pricing-container{
+          height:100%;
+          
+        }
+      }
+     
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic Greg</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅3 walks around Golden Gate Park </li>
+          <li>✅ 1 visit to Goodwill</li>
+          <li>🚫 No Support:you're on your own</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard Greg</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 2 bottles of wine</li>
+          <li>✅ 5 Dates to In & Out</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium Greg</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 1 Lobster Dinner</li>
+          <li>✅ won't stop talking about the '9ers</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+    </div>
+  </body>
+</html>
